@@ -1,0 +1,235 @@
+:root{
+    --color-text: #212121;
+    --background-color: #2F303A;
+    --color-accent: #757575;
+    --color-blak: #000000;
+    --color-title-second: #FFFFFF;
+    --backround-title: #F5F4FA;
+    --color-title: #ECECEC;
+    --title-accent: #EEEEEE;
+    --color-logo: #2196F3;
+    --background-color-btn:#118CE8 ;
+    --transparency: rgba(255, 255, 255, 0.6);
+}
+body {
+    font-family: roboto, sans-serif;
+    background-color: var(--color-title-second);
+    color: var(--color-text);
+    font-size: 14px;
+    letter-spacing: 0,03cm;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+/*навигация страницы*/
+.logo{
+    color: var(--color-logo);
+}
+.header-logo{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--color-blak);
+}
+.site-nav .link{
+    color: #212121;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:var(--color-logo);
+   
+}
+.site-nav .current {
+    color: var(--color-logo);
+}
+.auth-nav .link{
+    color: #757575;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+    color: var(--color-logo);
+}
+/*main*/
+/*business*/
+.business{
+background-color: var(--background-color);
+}
+.business-title{
+color: var(--color-title-second);
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/*button*/
+.business-btn{
+    color: var(--color-title-second);
+    background-color: var(--color-logo);
+    cursor: pointer;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+}
+.business-btn:hover,
+.business-btn:focus{
+        
+        background-color: #118CE8;
+}
+/*feature*/
+.feature-list .title{
+        color: var(--color-text);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase
+}
+.feature-list .ftr-text{
+        color: var(--color-accent);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
+/*Work*/
+.work-title{
+        color: var(--color-text);
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+/*Command*/
+.command{
+    font-size: var(--backround-title);
+}
+.command-title{
+        color: var(--color-text);
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+            letter-spacing: 0.03em;
+}
+.command-name{
+    color: var(--color-blak);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+.command-text{
+        color: var(--color-accent);
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+/*footer*/
+footer{
+    background-color: var(--background-color);
+}
+.footer-logo{
+    font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--color-title-second);
+}
+.auth-nav .footer-maps{
+    color: var(--color-title-second);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Стили для портфолио */
+/*кнопки навигации*/
+.button-nav{
+        background-color: var(--backround-title);
+        cursor: pointer;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color:var(--color-text);
+}
+.button-nav:hover,
+.button-nav:focus{
+    color: var(--color-title-second);
+    background-color: var(--color-logo);
+}
+
+.work-examples{
+    color: var(--color-text);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples{
+    color: var(--color-accent);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
