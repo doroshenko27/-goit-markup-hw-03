@@ -38,15 +38,14 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-/*Reset stile*/
+/*******************Reset stile*******************/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-ul {
+p {
   margin: 0;
 }
 .link {
@@ -58,14 +57,14 @@ ul {
   margin: 0;
 }
 
-/*навигация страницы*/
-
+/*/////////навигация страницы//////////*/
+/*---------------header----------------*/
 .header-ctr {
   align-items: center;
   display: flex;
 }
-.logo {
-  color: var(--color-logo);
+.header-nav {
+  display: flex;
 }
 .header-logo {
   padding-top: 20px;
@@ -83,25 +82,14 @@ ul {
   top: 2157px;
   border-radius: nullpx;
 }
-.header-nav {
-  display: flex;
+.logo {
+  color: var(--color-logo);
 }
 .site-nav {
   margin: 0;
   display: flex;
   gap: 50px;
   align-items: center;
-}
-.header-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.auth-nav {
-  margin-left: 331px;
-  display: flex;
-  gap: 50px;
-  justify-content: flex-end;
 }
 .site-nav .link {
   color: #212121;
@@ -112,13 +100,22 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--color-logo);
 }
 .site-nav .current {
   color: var(--color-logo);
+}
+.header-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.auth-nav {
+  margin-left: 331px;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
 }
 .auth-nav .link {
   color: #757575;
@@ -133,13 +130,14 @@ ul {
 .auth-nav .link:focus {
   color: var(--color-logo);
 }
-/*main*/
-/*business*/
+/*****************header end**************/
+
+/*----------------business--------------*/
 .business {
   display: flex;
   background-color: var(--background-color);
 }
-.business-ctr .container {
+.business-ctr {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -151,8 +149,6 @@ ul {
 }
 .business-title {
   color: var(--color-title-second);
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -160,13 +156,11 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-/*button*/
+/*-----------------button ------------------*/
 .business-btn {
   margin-bottom: 200px;
   margin-left: 496px;
-
   padding: 4px;
-  align-items: center;
 }
 .business-btn {
   color: var(--color-title-second);
@@ -187,11 +181,15 @@ ul {
 .business-btn:focus {
   background-color: #118ce8;
 }
-/*feature*/
+/*****************business end****************/
+
+/*----------------our features---------------*/
+
 .ftr-container .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .feature-list {
   display: flex;
   gap: 30px;
@@ -199,7 +197,7 @@ ul {
   margin-bottom: 94px;
 }
 
-.title {
+.ftr-title {
   margin-bottom: 10px;
   color: var(--color-text);
   font-family: 'Roboto';
@@ -220,7 +218,9 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-/*Work*/
+/***************our features and**************/
+
+/*--------------------Work-------------------*/
 .work-container .container {
   display: block;
   padding-top: 94px;
@@ -229,14 +229,6 @@ ul {
 .work-title {
   margin-bottom: 50px;
   text-align: center;
-}
-.work-item {
-  display: inline;
-  padding-bottom: 140px;
-}
-.work-list {
-  display: flex;
-  gap: 30px;
 }
 .work-title {
   color: var(--color-text);
@@ -247,22 +239,23 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/*Command*/
-.cmd-container {
-  display: block;
-  background-color: var(--backround-title);
-}
-.cmd-list {
+.work-list {
   display: flex;
   gap: 30px;
 }
+.work-item {
+  display: inline;
+  padding-bottom: 140px;
+}
+/*********************Work end********************/
+
+/*--------------------Command--------------------*/
 .command {
   font-size: var(--backround-title);
 }
-
-.command-list {
-  display: flex;
-  padding-top: 50px;
+.cmd-container {
+  display: block;
+  background-color: var(--backround-title);
 }
 .command-title {
   margin-bottom: 50px;
@@ -272,6 +265,10 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.cmd-list {
+  display: flex;
+  gap: 30px;
 }
 .command-name {
   margin-bottom: 10px;
@@ -292,7 +289,9 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/*footer*/
+/*******************Command end********************/
+
+/*--------------------footer----------------------*/
 footer {
   background-color: var(--background-color);
   padding-top: 94px;
@@ -311,6 +310,21 @@ footer {
   letter-spacing: 0.03em;
   color: var(--color-title-second);
   border-radius: nullpx;
+}
+
+.footer-maps .link:hover,
+.footer-maps .link:focus {
+  color: var(--background-color-btn);
+}
+.footer-maps .link {
+  padding-top: 20px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .footer-mail .link:focus,
 .footer-mail .link:hover {
@@ -341,27 +355,15 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.footer-maps .link:hover,
-.footer-maps .link:focus {
-  color: var(--background-color-btn);
-}
-.footer-maps .link {
-  padding-top: 20px;
-  color: #ffffff;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+/*********************footer end**********************/
 
-/* Стили для портфолио */
-/*кнопки навигации*/
+/*----------------Стили для портфолио----------------*/
+/*----------------working container------------------*/
 .working .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .visually-list {
   display: flex;
   align-items: center;
@@ -388,12 +390,6 @@ footer {
   color: var(--color-logo);
   background-color: var(--color-title-second);
 }
-
-.working-item {
-  border: 1px solid var(--title-accent);
-  border-top: 0;
-  margin-bottom: 80px;
-}
 .working-list {
   padding-left: 0;
   padding-right: 0;
@@ -402,6 +398,11 @@ footer {
   flex-wrap: wrap;
   justify-items: center;
   gap: 25px;
+}
+.working-item {
+  border: 1px solid var(--title-accent);
+  border-top: 0;
+  margin-bottom: 80px;
 }
 .work-examples {
   padding-left: 24px;
@@ -414,7 +415,6 @@ footer {
   letter-spacing: 0.06em;
   border-color: var(--title-accent);
 }
-
 .examples {
   padding-left: 24px;
   margin-bottom: 34px;
@@ -426,3 +426,5 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+/*****************working container end*******************/
+/****************Стили для портфолио end******************/
