@@ -407,8 +407,6 @@ footer {
 .work-examples {
   padding-left: 24px;
   color: var(--color-text);
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -419,8 +417,6 @@ footer {
   padding-left: 24px;
   margin-bottom: 34px;
   color: var(--color-accent);
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
