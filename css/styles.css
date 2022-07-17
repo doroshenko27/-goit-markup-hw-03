@@ -22,7 +22,7 @@ body {
   outline: 2px solid rgb(224, 244, 8);
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15;
+  padding: 0 15px;
 }
 .visually-hidden {
   position: absolute;
@@ -56,12 +56,9 @@ address {
 }
 button {
   display: block;
-  margin: 0;
-  padding: 10px, 32px;
+  margin: 0 auto;
+  padding: 10px 32px;
   cursor: pointer;
-  color: var(--color-title-second);
-  background-color: var(--color-logo);
-  box-shadow: opx 4px 4px rgb(0 0 0 / 15%);
   border: none;
   border-radius: 4px;
 }
@@ -168,13 +165,10 @@ button {
 .business-btn {
   color: var(--color-title-second);
   background-color: var(--color-logo);
-  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   letter-spacing: 0.06em;
-  border-radius: 4px;
 }
 .business-btn:hover,
 .business-btn:focus {
@@ -192,8 +186,6 @@ button {
 .feature-list {
   display: flex;
   gap: 30px;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .ftr-title {
@@ -220,6 +212,9 @@ button {
 /***************our features and**************/
 
 /*--------------------Work-------------------*/
+.work {
+  padding-top: 0;
+}
 .work-container .container {
   display: block;
 }
@@ -245,7 +240,7 @@ button {
 
 /*--------------------Command--------------------*/
 .command {
-  font-size: var(--backround-title);
+  background-color: var(--backround-title);
 }
 .command-title {
   margin-bottom: 50px;
@@ -259,6 +254,12 @@ button {
 .cmd-list {
   display: flex;
   gap: 30px;
+}
+cmd-link {
+  background: var(--color-title-second);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .command-name {
   margin-bottom: 10px;
@@ -304,45 +305,33 @@ footer {
   display: block;
   margin-bottom: 20px;
 }
-.footer-auth-nav {
-  margin-top: 20px;
+.footer-item:last-child:not {
+  margin-bottom: 9px;
 }
-.footer-maps .link:hover,
-.footer-maps .link:focus {
+.footer-maps:hover,
+.footer-maps:focus {
   color: var(--background-color-btn);
 }
-.footer-maps .link {
+.footer-maps {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer-mail .link:focus,
-.footer-mail .link:hover {
-  color: var(--background-color-btn);
-}
-.footer-mail .link {
-  margin-top: 9px;
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.footer-tel .link:hover,
-.footer-tel .link:focus {
-  color: var(--background-color-btn);
-}
-.footer-tel .link {
-  margin-top: 9px;
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 
+.adres-link {
+  margin-top: 9px;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.adres-link:hover,
+:focus {
+  color: var(--background-color-btn);
+}
 /*********************footer end**********************/
 
 /*----------------Стили для портфолио----------------*/
@@ -360,7 +349,18 @@ footer {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
+.button-item {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 6px 22px;
+  gap: 8px;
+}
+/*
 .button-nav .link {
   color: var(--color-text);
   background-color: var(--backround-title);
@@ -375,11 +375,11 @@ footer {
   border-color: var(--color-title-second);
   gap: 8px;
   margin-bottom: 24px;
-}
-.button-nav .link:hover,
-.button-nav .link:focus {
-  color: var(--color-logo);
-  background-color: var(--color-title-second);
+}*/
+.button-nav:hover,
+.button-nav:focus {
+  color: var(--color-title-second);
+  background-color: var(--color-logo);
 }
 .working .container {
   padding-top: 94px;
@@ -390,8 +390,7 @@ footer {
   flex-wrap: wrap;
   gap: 30px;
 }
-.work-item {
-}
+
 .working-item {
   padding: 20px 24px;
   border: 1px solid var(--title-accent);
