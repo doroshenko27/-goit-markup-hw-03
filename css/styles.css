@@ -57,7 +57,7 @@ address {
 button {
   display: block;
   margin: 0 auto;
-  padding: 10px 32px;
+  font-family: roboto;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -169,6 +169,7 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
 }
 .business-btn:hover,
 .business-btn:focus {
@@ -255,7 +256,7 @@ button {
   display: flex;
   gap: 30px;
 }
-cmd-link {
+.cmd-link {
   background: var(--color-title-second);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -305,7 +306,7 @@ footer {
   display: block;
   margin-bottom: 20px;
 }
-.footer-item:last-child:not {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-maps:hover,
@@ -321,11 +322,10 @@ footer {
 }
 
 .adres-link {
-  margin-top: 9px;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
 }
 .adres-link:hover,
@@ -348,34 +348,18 @@ footer {
 .visually-list {
   display: flex;
   justify-content: center;
-  gap: 8px;
   margin-bottom: 50px;
+  gap: 8px;
 }
-.button-item {
+.button-nav {
   color: var(--color-text);
-  font-weight: 700;
+  font-style: medium;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   padding: 6px 22px;
-  gap: 8px;
 }
-/*
-.button-nav .link {
-  color: var(--color-text);
-  background-color: var(--backround-title);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  border-color: var(--color-title-second);
-  gap: 8px;
-  margin-bottom: 24px;
-}*/
 .button-nav:hover,
 .button-nav:focus {
   color: var(--color-title-second);
